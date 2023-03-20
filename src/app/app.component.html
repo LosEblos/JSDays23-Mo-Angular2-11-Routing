@@ -1,5 +1,25 @@
-<a routerLink="/todos" routerLinkActive="my-active">Home</a> |
-<a routerLink="/todos/new" routerLinkActive="my-active">Create</a>
+<h2>11. Routing</h2>
+<a
+  routerLink="/todos"
+  routerLinkActive="my-active-route"
+  [routerLinkActiveOptions]="{ exact: true }"
+  >Home</a
+>
+|
+<a
+  routerLink="/todos/new"
+  routerLinkActive="my-active-route"
+  [routerLinkActiveOptions]="{ exact: true }"
+  >Create</a
+>
 <hr />
 <br />
 <router-outlet></router-outlet>
+<br />
+<br />
+<div>routerLinkActive="CssClassName.for.active.route"</div>
+<br />
+<div>
+  Geschweifte Klammern führen immer zu Angular Interpretation. Man muss sie
+  durch HTML-Entitäten ersetzen, da sie nicht escaped werden können.
+</div>
